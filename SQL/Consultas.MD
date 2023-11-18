@@ -44,6 +44,10 @@ ORDER BY:
 	Significa um caractere em sua posição.
 
 
+# Exercicios:
+- [01. Consultas SQL](https://github.com/ebagabe/Exercicios/tree/main/SQL/01.%20Consultas%20com%20SELECT)
+
+
 
 
 
