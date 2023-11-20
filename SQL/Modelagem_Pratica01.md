@@ -106,3 +106,45 @@ values
 (12345, 3),
 (121234, 2);
 ```
+
+- Relação com a propria tabela:
+```sql
+create table comentarios (
+	id serial primary key,
+  descricao text not null,
+  comentario_id integer references comentarios(id),
+  livro_isbn integer references livros(isbn)
+)
+```
+
+- Criando a relação com ela mesma fazendo um comentario em um comentário:
+
+```sql
+insert into comentarios (livro_isbn, descricao) values (12345, 'Livro super bacana');
+```
+
+```sql
+insert into comentarios (comentario_id, descricao) values(1, 'Agradeço seu comentario');
+```
+
+### Alterar Tabela
+
+- Adicionando nova coluna descrição:
+```sql
+alter table categorias add column descricao text;
+```
+
+- Alternado tipo
+```sql
+alter table categorias alter column descricao type varchar(100);
+```
+
+- Excluindo coluna
+```sql
+alter table categorias drop column descricao;
+```
+
+- Adicionado chave estrangeira
+```sql
+alter table telefones add constraints foreign key editora_id;
+```
