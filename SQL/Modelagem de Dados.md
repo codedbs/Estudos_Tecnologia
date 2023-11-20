@@ -85,3 +85,12 @@ decimal(7, 4) -- 7 de tamanho e 4 de escala (Tamanho do numero ou numero de digi
 	- Funciona da mesma forma dos outros tipos de relacionamento
 	- *Exemplo*
 	- Um comentário tem comentários
+
+### Constraints ou Restrições
+
+São regras que aplicamos em colunas de uma tabela para controlar os dados armazenados
+
+- Primary Key: Identificador único de cada registro
+- Foreign Key: Representa a chave primário em um relacionamento
+- UNIQUE: Define que o valor da coluna seja único entre os registros
+- NOT NULL: Impede que uma coluna receba valores nulos
